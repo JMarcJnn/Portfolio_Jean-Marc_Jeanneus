@@ -316,8 +316,22 @@ img {
   padding: 1rem 1.5rem;
   border-radius: .5rem;
   transition: box-shadow .4s, color .4s;
-  
 }
+
+.button:hover{
+  box-shadow: 0 8px 24px hsla(var(--hue), 80%, 48%, .3);
+}
+
+.button__ghost{
+  background: var(--body-color);
+  color: var(--white-color);
+  border: 2px solid var(--first-color);
+}
+
+.button__ghost:hover{
+  color: var(--first-color);
+}
+
 /*=============== ABOUT ===============*/
 
 
@@ -348,10 +362,28 @@ img {
   .container{
     margin-inline: 1rem;
   }
+
+  .home__image{
+    width: 200px;
+    height: 200px;
+
+  }
+
+  .home__img{
+    width: 170px;
+
+  }
 }
 
 /* For medium devices */
 
+@media screen and (min-width: 540px){
+  .home__container{
+    grid-template-columns: 600px;
+    justify-content: center;
+
+  }
+}
 
 /* For large devices */
 @media screen and (min-width: 1150px){
