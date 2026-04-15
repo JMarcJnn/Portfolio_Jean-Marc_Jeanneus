@@ -237,6 +237,35 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container{
+  row-gap: 4rem;
+  padding-block: 2.5rem 2rem;
+}
+
+.home__content{
+  position: relative;
+  justify-self: center;
+
+}
+
+.home__image{
+  width: 240px;
+  height: 240px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 5px solid var(--first-color);
+  box-shadow: 0 8px 32px hsla(var(--hue), 80%, 48%, .3);
+}
+
+.home_img{
+  width: 160px;
+  filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
+  margin-top: -15px;
+}
 
 
 /*=============== BUTTON ===============*/
