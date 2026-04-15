@@ -233,7 +233,7 @@ img {
 /*=============== HOME ===============*/
 .home__container{
   row-gap: 4rem;
-  padding-block: 12.5rem 2rem;
+  padding-block: 10.5rem 2rem;
 }
 
 .home__content{
@@ -379,7 +379,7 @@ img {
 
 @media screen and (min-width: 540px){
   .home__container{
-    grid-template-columns: 600px;
+    grid-template-columns: 615px;
     justify-content: center;
 
   }
