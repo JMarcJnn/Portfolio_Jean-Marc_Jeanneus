@@ -38,6 +38,13 @@ const typedHome = new Typed('#home-typed', {
  })
 
 /*=============== ADD SHADOW HEADER ===============*/
+const shadowlHeader = () =>{
+   const header = document.getElementById('header')
+   // Add the .scroll-header class if the bottom scroll of the viewport is greater than 50
+   this.scrollY >= 50 ? header.classList.add('shadow-header') 
+                      : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 
 /*=============== CONTACT EMAIL JS ===============*/ 
