@@ -230,6 +230,11 @@ img {
   top: 0;
 }
 
+/* Ajout du shdow header */
+.shadow-header{
+  box-shadow: 0 2px 26px hsla(0, 0%, 0%, .5);
+}
+
 /*=============== HOME ===============*/
 .home__container{
   row-gap: 4rem;
@@ -438,6 +443,15 @@ img {
     left: -4rem;
   }
 
+  .home__data{
+    row-gap: 1.5em;
+  }
+
+  .home__buttons{
+    margin-top: 3.5rem;
+    column-gap: 1.5rem;
+
+  }
 }
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
