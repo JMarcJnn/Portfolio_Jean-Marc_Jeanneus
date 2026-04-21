@@ -117,7 +117,7 @@ img {
 
 .grid {
   display: grid;
-  gap: 11rem;
+  gap: 4rem;
 }
 
 .section {
@@ -430,13 +430,13 @@ img {
   backdrop-filter: blur(16px);
   display: grid;
   place-content: center;
-  row-gap: 1.5rem;
-  text-align: .5rem;
+  row-gap: .5rem;
+  text-align: center;
   padding: 0 1rem;
-  /*border-radius: 1rem;
+  border-radius: 1rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity .4s;*/
+  transition: opacity .4s;
 }
 
 .projects__title{
@@ -455,6 +455,11 @@ img {
 
 .projects__card:hover{
   box-shadow: 0 8px 16px hsl(var(--hue), 80%, 48%, .2);
+}
+
+.projects__card:hover .projects__data{
+  opacity: 1;
+  pointer-events: initial;
 }
 /*=============== RESUME ===============*/
 
@@ -490,16 +495,28 @@ img {
 
   .home__img,
   .about__img{
-    width: 200px;
+    width: 170px;
   }
+
+  .projects__data{
+    padding-inline: .5rem;
+  }
+
+  .projects__data .button{
+    padding: .5rem .75rem;
+  }
+
+  
+
 }
 
 /* For medium devices */
 
 @media screen and (min-width: 540px){
   .home__container,
-  .about__container{
-    grid-template-columns: 510px;
+  .about__container,
+  .projects__container{
+    grid-template-columns: 400px;
     justify-content: center;
 
   }
@@ -508,7 +525,7 @@ img {
 @media screen and (min-width: 768px){
   .home__container,
   .about__container{
-    grid-template-columns: repeat(2, 470px);
+    grid-template-columns: repeat(2, 350px);
     align-items: center;
   }
   .home__data,
@@ -519,12 +536,24 @@ img {
   .home__buttons{
     justify-content: initial;
   }
+
+  .projects__container{
+    grid-template-columns: repeat(2, 350px);
+  }
 }
 
 /* For large devices */
 @media screen and (min-width: 1150px){
   .container{
     margin-inline: auto;
+  }
+
+  .section{
+    padding-block: 7rem 2rem;
+  }
+
+  .section__title{
+    margin-bottom: 3rem;
   }
 
   .nav{
